@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<nav id="navbar">
+    <div id="navBarUp">
+        <div><img src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg" height="40px" width="40px"></div>
+        <div><input type="text" placeholder="Search photos for high-resolution" id="search"></div>
+        <div><button type="submit" id="btn">Search</button></div>
+        <div><img src="https://www.w3schools.com/howto/img_avatar.png" height="40px" width="40px"class="icon"></div>
+    </div>
+
+    <div id="navDiv2"></div>
+</nav>
+<body>
+
+<script type="module">
+        import {navbar,display} from "./navbar.js";
+
+        document.getElementById('navDiv2').innerHTML = navbar();
+        display();
+    </script>
+</body>
+</html>
